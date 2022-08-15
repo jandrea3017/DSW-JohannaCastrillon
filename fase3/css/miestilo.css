@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    padding: 50px;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 14px 35px;
+    text-decoration: none;
+}nav
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+section{
+    grid-column: 1/4;
+    flex: 70%;
+    background-color: khaki;
+    padding: 20px;
+}
+
+aside{
+    grid-column: 4/5;
+    flex: 30px;
+    background-color: beige;
+    padding: 20px;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: palevioletred;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+
+.menu{
+    padding: 0px 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.menu>li{
+    float: left;
+}
+.menu>li{
+    background-color: white;
+    color: blue;
+    text-decoration: yellow;
+    padding: 20px 80px;
+    display: block;
+}
+
+.menu li a:hover{
+    background-color: aquamarine;
+}
+.menu li ul{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    min-width: 140px;
+}
+.menu li:hover > ul{
+    display: block;
+}
+.menu li ul li{
+    position: relative;
+}
+.menu li ul li ul{
+    right: 140px;
+}
